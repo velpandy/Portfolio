@@ -5,6 +5,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: false },
+  compress: true, // Enable Gzip/Brotli compression
+  images: {
+    formats: ["image/avif", "image/webp"], // Modern formats for faster loading
+  },
 };
 
 module.exports = {

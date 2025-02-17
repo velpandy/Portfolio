@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
+
 const skills = {
   "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
   "Backend": ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
@@ -10,7 +11,7 @@ const skills = {
 
 export default function About() {
   return (
-    <div className="container mx-auto px-4 py-16 fade-in">
+    <div className="container mx-auto px-36 py-16 fade-in">
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
       
       <div className="grid gap-8">

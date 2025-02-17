@@ -15,6 +15,7 @@ import {
   MailIcon,
 } from "lucide-react";
 
+
 const navigation = [
   { name: "Home", href: "/", icon: HomeIcon },
   { name: "About", href: "/about", icon: UserIcon },

@@ -4,10 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail,Code } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { useState } from "react"
 import Link from "next/link"
+
 
 export default function Contact() {
   const { toast } = useToast()
@@ -39,7 +40,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-16 fade-in">
+    <div className="container mx-auto px-36 py-16 fade-in">
       <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
       
       <div className="grid gap-8 md:grid-cols-2">
@@ -61,7 +62,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="John Smith"
+                  placeholder="Your Sweet Name"
                   required
                 />
               </div>
@@ -76,7 +77,7 @@ export default function Contact() {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="Your Email"
                   required
                 />
               </div>
@@ -137,6 +138,16 @@ export default function Contact() {
                 <Linkedin className="h-5 w-5" />
                 <span>linkedin.com/in/velpandy-c</span>
               </Link>
+
+              <Link 
+                href="https://leetcode.com/u/velpandyc"
+                target="_blank"
+                className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Code className="h-5 w-5" />
+                <span>leetcode.com/u/velpandyc</span>
+              </Link>
+              
             </CardContent>
           </Card>
         </div>
